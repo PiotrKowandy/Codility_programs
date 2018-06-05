@@ -1,6 +1,6 @@
 /*
 Author: Piotr Kowańdy
-Description: Perm missing element.
+Description: Perm missing element in array.
 */
 
 #include <iostream>
