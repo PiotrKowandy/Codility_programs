@@ -1,6 +1,7 @@
 /*
 Author: Piotr Kowañdy
 Description: Missing integer - founding the lowest missing integer.
+Version: 2.0
 */
 
 #include <iostream>
