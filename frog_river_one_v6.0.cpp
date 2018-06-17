@@ -1,7 +1,7 @@
 /*
-Author: Piotr Kowañdy
+Author: Piotr KowaÃ±dy
 Description: Frog river one.
-Version: 5.0
+Version: 6.0
 */
 
 #include <iostream>
