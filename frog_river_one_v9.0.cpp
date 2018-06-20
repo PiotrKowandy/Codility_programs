@@ -1,5 +1,5 @@
 /*
-Author: Piotr Kowañdy
+Author: Piotr KowaÃ±dy
 Description: Frog river one.
 Version: 9.0
 */
@@ -8,7 +8,6 @@ Version: 9.0
 #include <vector>
 #include <algorithm>
 using namespace std;
-
 
 void show_vector(vector<int> &vect){
         for (int i=0; i < vect.size(); i++) cout << vect[i] << " ";
@@ -26,7 +25,6 @@ int find_element(vector<int> &A, int X,  int length){
     return position;
 }
 
-
 int solution(int X, vector<int> &A) {
     int you_can_go = 0;
     int length = A.size();
@@ -39,13 +37,12 @@ int solution(int X, vector<int> &A) {
         if (length > X){
             int mis = 0;
             for (int i=0; i<X; i++){
-                mis = find_element(A, i+1, length);
-                if (mis == -1){
+                if (find_element(A, i+1, length) == -1){
                     return -1;
                     break;
                 }
                 else {
-                    if (mis >= you_can_go) you_can_go = mis;
+                    if (find_element(A, i+1, length) >= you_can_go) you_can_go = mis;
                 }
             }
         }
@@ -56,11 +53,9 @@ int solution(int X, vector<int> &A) {
     return you_can_go;
 }
 
-
 int main (int argc, char *argv[]){
     vector<int> vect {1,3,1,4,2,3,5,4};
     show_vector(vect);
-
     cout << "Frog can walk thru river in second: " << solution(5, vect) << " \n";
     return 0;
 }
