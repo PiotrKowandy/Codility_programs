@@ -41,14 +41,10 @@ int solution(int X, vector<int> &A) {
                     return -1;
                     break;
                 }
-                else {
-                    if (find_element(A, i+1, length) >= you_can_go) you_can_go = mis;
-                }
+                else if (find_element(A, i+1, length) >= you_can_go) you_can_go = mis;
             }
         }
-        else{
-             return -1;
-        }
+        else return -1;
     }
     return you_can_go;
 }
