@@ -12,7 +12,7 @@ int solution (int A, int B, int K){
     int found=0;
     int start_position=0;
 
-    if (A <= B && K <=B && K >0){
+    if (A <= B && K <B && K >0){
         for (int i=A; i<= B; i++){
             if (i%K == 0){
                 start_position = i;
