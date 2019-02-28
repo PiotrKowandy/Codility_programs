@@ -42,27 +42,6 @@ vector<int> solution(int N, vector<int> &A){
     return vec_found;
 }
 
-/*
-        std::vector<int> counter(N);
-        int max_el = 0;
-        int check = 0;
-
-
-        for(int i = 0 ; i < A.size() ; i++){
-            if(A[i] == N+1) max_el = check;
-            else{
-                if(counter[A[i]-1] < max_el)  counter[A[i]-1] = max_el;
-                counter[A[i]-1]++;
-                if(check < counter[A[i]-1]) check = counter[A[i]-1];
-            }
-        }
-        //for(int i = 0 ; i < counter.size() ; i++) if(counter[i] < max_el)  counter[i] = max_el;
-
-
-        return counter;
-
-}
-*/
 
 
 int main (int argc, char *argv[]){
