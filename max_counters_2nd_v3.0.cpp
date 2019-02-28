@@ -1,7 +1,7 @@
 /*
 Author: Piotr Kowañdy
 Description: Max counters
-Version: 1.0
+2nd, Version: 3.0
 */
 
 #include <iostream>
